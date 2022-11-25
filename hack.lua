@@ -14,9 +14,14 @@ CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 
 -- TABS
-
 local MainTab = Window:MakeTab({
 	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local DoorsTab = Window:MakeTab({
+	Name = "Doors",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -108,6 +113,20 @@ G2Tab:AddButton({
 	Name = "Mining sim",
 	Callback = function()
         loadstring(game:HttpGet('https://robloxscripts.co.uk/keysystem.lua'))('BaKnmd4C')
+  	end
+})
+
+DoorsTab:AddButton({
+	Name = "Doors spawner",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/DoorsEntitySummonerGUI/main/EntityGUI'))()
+  	end
+})
+
+DoorsTab:AddButton({
+	Name = "Doors spawner 2",
+	Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/OldEntityGUI/main/OldEntityGUI'))()
   	end
 })
 
