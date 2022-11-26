@@ -217,13 +217,6 @@ MainTab:AddButton({
   	end    
 })
 
-CreditsTab:AddButton({
-	Name = "My other hack",
-	Callback = function()
-        loadstring(game:HttpGet((‘https://raw.githubusercontent.com/s0shadow0BG/Myhack.lua/main/hack.lua")))()
-  	end    
-})
-
 MainTab:AddButton({
 	Name = "Click to tp",
 	Callback = function()
